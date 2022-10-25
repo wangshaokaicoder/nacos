@@ -102,7 +102,7 @@ public final class ConfigExecutor {
         return ((ScheduledThreadPoolExecutor) ASYNC_NOTIFY_EXECUTOR).getQueue().size();
     }
     
-    public static int asyncCofigChangeClientNotifyQueueSize() {
+    public static int asyncConfigChangeClientNotifyQueueSize() {
         return ((ScheduledThreadPoolExecutor) ASYNC_CONFIG_CHANGE_NOTIFY_EXECUTOR).getQueue().size();
     }
     
