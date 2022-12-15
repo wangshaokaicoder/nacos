@@ -22,15 +22,16 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * Nacos starter.
+ * 单机启动的参数  -Dnacos.standalone=true
  *
+ * Nacos starter.
  * @author nacos
  */
 @SpringBootApplication(scanBasePackages = "com.alibaba.nacos")
 @ServletComponentScan
 @EnableScheduling
 public class Nacos {
-    
+
     public static void main(String[] args) {
         SpringApplication.run(Nacos.class, args);
     }
